@@ -85,10 +85,74 @@ class Main {
      System.out.println("Your eye color is brown");
     }
     //this if statement works
- int eyeColor = 10;
+ int eyeColorCost = 10;
+ 
  System.out.print("Current Credits = ");
- System.out.println(credits - eyeColor);
+ System.out.println(credits - eyeColorCost - hairColor);
+ //this shows the credits you have left
+ System.out.println(" ");
 
+ System.out.println("Lastly you will pick out your clothes");
+ System.out.println(" ");
+
+ System.out.println("Below are 2 numbers for your random shirt color");
+
+ for(int count2 = 1; count2 <= 2; count2++)
+  {
+    System.out.println(count2);
+    
+  }
+
+ Scanner scan2 = new Scanner(System.in);
+ System.out.println("Pick a random number for your shirt color");
+ String shirtColor = scan.next();
+ //scan to pick your random shirt color
+
+ System.out.println(" ");
+
+ boolean greenShirt = true;
+
+ if (greenShirt)
+   {
+     System.out.println("Your shirt color is green");
+    }
+ else 
+   {
+     System.out.println("Your shirt color is red");
+    }
+   //if statement for your shirt color
+ 
+ System.out.println("Finally pick what type of pants you want"); 
+ System.out.println("The different type of pants are listed below");
+ System.out.println("1) Jeans");
+ System.out.println("2) Khaki");
+ System.out.println("3) Yoga Pants");
+ System.out.println("4) Skirt");
+ System.out.println("5) Shorts");
+ System.out.println("6) Sweatpants");
+//list of the different types of pants
+
+ Scanner scan3 = new Scanner(System.in);
+ System.out.println("Pick a number for what type of pants you want");
+ String pantsType = scan.next();
+
+for(int count3 = 1; count3 <= 6; count3++)
+  {
+    System.out.println(count3);
+    
+  }
+
+ System.out.println("Your type of pants is option " + pantsType);
+
+ Scanner scan4 = new Scanner(System.in);
+ System.out.println("Please enter your name");
+ String name = scan.next();
+ System.out.println("");
+
+ System.out.println("Your characters features are: ");
+ System.out.println("Gender: " + gender);
+ System.out.println("Hair Color: Option " + optionSelected+ " for the hair choices");
+ System.out.println("Eye Color: " + eyeColor);
 
   }
 }
